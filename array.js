@@ -5,8 +5,8 @@
 // console.log(arr.length) // length is a property
 // console.log(arr.push(4)) // append in last
 // console.log(arr.pop()) // remove from last
-// console.log(arr.unshift('0')) // append in first
-// console.log(arr.shift('0')) // remove from first
+// console.log(arr.unshift(-1, '0',)) // append in first
+// console.log(arr.shift()) // remove from first
 // console.log(arr.splice(1, 1)) // [2] (start, count) -- effect in original array
 // console.log(arr.slice(1, 2)) // [2] (start, end) -- no effect in original array
 
@@ -17,7 +17,7 @@
 
 // let str = 'Sumit Kumar Verma';
 // console.log(str.split(' ')) // ['Sumit', 'Kumar', 'Verma']
-// console.log(['Sumit', 'Kumar', 'Verma'].join('-')) // 'Sumit Kumar Verma'
+// console.log(['Sumit', 'Kumar', 'Verma'].join('-')) // 'Sumit-Kumar-Verma'
 
 // let arr = ['sumit', 'kumar']
 // let arr2 = ['verma']

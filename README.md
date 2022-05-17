@@ -36,3 +36,12 @@ In JavaScript, Hoisting is the default behavior of moving all the declarations a
 
 <!-- Temporal Dead Zone -->
 The var declarations are hoisted and initialized with undefined . ... let and const variables are hoisted too but they cannot be accessed before their declarations. This is called Temporal Dead Zone
+
+<!-- Event Bubbling -->
+In the event bubbling model, an event starts at the most specific element and then flows upword toward the lease specific element
+button->div->body->html->document
+
+<!-- Event Capturing -->
+In thi event capturing model, an event starts at the least specific element and flows downward toward the most specific element
+document->html->body->div->button
+

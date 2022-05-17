@@ -1,7 +1,11 @@
+// variable declieared using var is the part of window object
+// let and const is not part of window object
+
 // var _hello = 'hello'
 // let $hello = 'hello'
 // var a;   // default value is undefined
-// // const x  // error
+// const x  // error - assignment required
+// const x = 1  // assignment required
 
 // console.log(typeof a)   // undefined
 // console.log(`Hello ${$hello}`)   // template literals
@@ -37,3 +41,5 @@
 
 //////// Strict Mode //////
 "use strict"
+
+// x = 3.14;       // This will cause an error because x is not declared

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Word Counter</title>
+   <style>
+      .container {
+         text-align: center;
+      }
+
+      .box {
+         width: 600px;
+         padding: 20px;
+         margin: 50px auto;
+         background-color: #f5f5f5;
+         border: 1px solid #f9f9f9;
+      }
+
+      .col {
+         display: inline;
+      }
+
+      .col textarea {
+         width: 400px;
+         margin: 20px;
+         padding: 5px;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <h2>Word Counter</h2>
+      <div class="box">
+         <div class="col">
+            <textarea id="para" rows="5"></textarea>
+            <h3>Words : <span id="word_count">0</span> | Characters : <span id="char_count">0</span></h3>
+         </div>
+      </div>
+   </div>
+   <script>
+      let para = document.getElementById('para')
+      let word = document.getElementById('word_count')
+      let char = document.getElementById('char_count')
+      para.addEventListener('input', function () {
+         let c = this.value
+         char.innerText = c.length
+         let arr = c.split(' ').filter(function(item) {
+            return item != ''
+         })
+         let w = arr.length
+         word.innerText = w
+      })
+   </script>
+</body>
+
+</html>

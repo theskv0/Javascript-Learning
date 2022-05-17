@@ -20,12 +20,16 @@
 //    age: 25,
 //    addr: 'Abc',
 //    sayName: function () {
+//       // console.log(this) // current object
 //       console.log(this.name)
 //    },
 //    sayAddr: () => {
+//       // console.log(this) // window object
 //       console.log(this.name)
+//       // console.log(this.user) // if user variable is defined using var then it'll return user object otherwise undefined
 //    },
 //    sayAge() {
+//       // console.log(this) // current object
 //       console.log(this.age)
 //    }
 // }
@@ -41,9 +45,12 @@
 // console.log(Math.round(4.5)) // 5  --  roundoff
 // console.log(Math.ceil(4.5)) // 5  --  max rounded vlaue
 // console.log(Math.floor(4.5)) // 4  --  min rounded value
-// console.log(Math.trunc(4.1)) // 4  --  remove digits after point 
-// console.log(Math.pow(5, 2)) // 25 
-// console.log(Math.sqrt(100)) // 10 
+// console.log(Math.trunc(4.1)) // 4  --  remove digits after point
+// console.log(Math.pow(5, 2)) // 25
+// console.log(Math.sqrt(100)) // 10
+
+// console.log(Math.floor(-4.5)) // 4  --  min rounded value
+// console.log(Math.trunc(-4.1)) // 4  --  rounds towards zero
 
 // let arr = [1, 4, 6, 0.1]
 // console.log(Math.min(...arr)) // 0.1

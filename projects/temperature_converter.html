@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Temperature Converter</title>
+   <style>
+      .container {
+         text-align: center;
+      }
+      .box {
+         width: 600px;
+         padding: 20px;
+         margin: 50px auto;
+         background-color: #f5f5f5;
+         border: 1px solid #f9f9f9;
+      }
+      .col {
+         display: inline;
+      }
+      .col input {
+         width: 150px;
+         margin: 20px;
+         padding: 5px;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h2>Temperature Converter</h2>
+      <div class="box">
+         <div class="col">
+            Celsius
+            <input type="number" value="0" id="cel">
+         </div>
+         <div class="col">
+            Fahrenheit
+            <input type="number" value="32" id="far">
+         </div>
+      </div>      
+   </div>
+   <script>
+      let cel = document.getElementById('cel')
+      let far = document.getElementById('far')
+      cel.addEventListener('input', function () {
+         let c = this.value
+         far.value = (c * 9/5) + 32
+      })
+      far.addEventListener('input', function () {
+         let f = this.value
+         cal.value = (f - 32) * 5/9
+      })
+   </script>
+</body>
+</html>
