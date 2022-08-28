@@ -49,8 +49,8 @@
 // console.log(Math.pow(5, 2)) // 25
 // console.log(Math.sqrt(100)) // 10
 
-// console.log(Math.floor(-4.5)) // 4  --  min rounded value
-// console.log(Math.trunc(-4.1)) // 4  --  rounds towards zero
+// console.log(Math.floor(-4.5)) // -5  --  min rounded value
+// console.log(Math.trunc(-4.1)) // -4  --  rounds towards zero
 
 // let arr = [1, 4, 6, 0.1]
 // console.log(Math.min(...arr)) // 0.1
@@ -61,7 +61,7 @@
 // console.log(Math.floor(Math.random() * (26 - 5) + 5)) //  5 - 25
 
 
-/////////////// Math Object /////////////
+/////////////// Date Object /////////////
 
 // let x = new Date()  // current date and time
 // let x = new Date(2018, 2, 1, 09, 00, 00) // (y, m, d, h, i, s)
